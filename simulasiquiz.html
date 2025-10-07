@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--feather icon  -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- css nya -->
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/simualasiquiz.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+<!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">fotosin<span>tesis</span></a>
+      <div class="navbar-nav">
+        <a href="/index.html">Halaman utama</a>
+        <a href="#materi">Materi</a>
+        <a href="simulasiquiz.html">Simulasi & Quiz</a>
+        <a href="/about.html">Tentang Kami</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+<div id="animation-container">
+
+</div>
+<div class="controls">
+  <button id="startBtn" class="primary">Start</button>
+  <button id="resetBtn" class="secondary">Reset</button>
+</div>
+
+<p class="hint">Alur: Start → Matahari turun & sinar fokus → Hujan turun dari awan → Air masuk tanah lalu naik lewat batang → Pohon tumbuh subur → Persamaan fotosintesis & O₂ muncul.</p>
+
+    <!-- kuis start -->
+    <div class="kuis max-w-2xl mx-auto bg-[#b5f2b17c] p-6 rounded-lg shadow-lg mt-20 mb-5">
+      <h1 class="text-2xl font-bold text-center mb-4">
+        Kuis: Biologi Dasar Fotosintesis
+      </h1>
+      <div id="quiz-container"></div>
+      <button
+        id="cekJawaban"
+        class="mt-4 px-4 py-2 bg-[#2be469] text-white rounded-lg"
+      >
+        Periksa Jawaban
+      </button>
+      <p id="hasil" class="mt-4 text-center text-lg font-semibold"></p>
+    </div>
+    <!-- kuis end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="links">
+        <a href="#home">Halaman utama</a>
+        <a href="#materi">Materi</a>
+        <a href="simulasiquiz.html">Simulasi</a>
+        <a href="/about.html">Tentang Kami</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Kelompok 6</a> | &copy: 2025</p>
+      </div>
+    </footer>
+
+    <!-- Footer end -->
+    
+    <!-- simulasi js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+    <script src="/js/simulasi.js"></script>
+
+    <!-- quiz js -->
+    <script src="/js/quiz.js"></script>
+    <script src="/js/simulasi.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>
